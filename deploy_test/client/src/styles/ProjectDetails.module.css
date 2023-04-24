@@ -1,0 +1,91 @@
+.bigProjectTitle {
+  margin: 35px auto;
+  color: white;
+  font-size: 50px;
+}
+
+.descriptionContainer {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+}
+
+.masterContainer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 2fr;
+}
+
+.picContainer {
+  display: flex;
+  justify-content: space-evenly;
+  grid-column: 1/2;
+}
+
+.projectTitle {
+  align-items: flex-end;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.prjDescription {
+  width: 25%;
+  word-wrap: break-word;
+}
+
+.mapAuthors {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  margin: 10px 15px;
+  box-shadow: 5px 4px 0 0 rgba(0, 0, 0, 0.307);
+  border-radius: 5px;
+}
+
+.details {
+  margin-top: 30px;
+  margin-left: 20px;
+  border-top: 3px solid rgba(0, 0, 0, 0.312);
+  padding: 30px;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 200px;
+}
+
+@media screen and (max-width: 1175px) {
+  .masterContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .btnContainer {
+    flex-direction: column;
+    align-content: space-around;
+  }
+}
+h3 {
+  color: white;
+}
+
+@media screen and (max-width: 626px) {
+  .masterContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .btnContainer {
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+h3 {
+  color: white;
+}

@@ -1,0 +1,161 @@
+.bigDaddy2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoutContainer {
+  display: flex;
+  margin: 25% auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fileUploadBtnContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.FormContainer {
+  margin-top: 30px;
+  background-color: rgb(10, 133, 157);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  height: fit-content;
+  padding: 20px 30px;
+  width: 500px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.ActiveForm {
+  display: flex;
+  flex-direction: column;
+  padding: auto 30px;
+  justify-content: flex-start;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.adminActiveForm {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  padding: auto 30px;
+  justify-content: flex-start;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.alreadyReg {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  left: 65%;
+  top: 5%;
+  color: white;
+}
+
+.line > a {
+  color: rgb(214, 153, 41);
+}
+.line > a:hover {
+  color: rgb(255, 255, 255);
+}
+
+input,
+select,
+label {
+  width: 70%;
+  position: relative;
+  text-align: flex-start;
+}
+
+h1,
+label {
+  color: white;
+}
+
+input,
+select,
+textarea,
+label {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  margin-bottom: 5px;
+}
+
+label {
+  position: relative;
+}
+
+.authorName {
+  padding: 0.25rem;
+  color: rgb(255, 255, 255);
+}
+
+textarea {
+  width: 90%;
+}
+
+.errMsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+section {
+  width: 800px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  margin: 15px auto;
+  border-bottom: solid 3px #066274;
+}
+
+.authorSelectContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.authorsList {
+  display: flex;
+  flex-direction: column;
+  z-index: 10000;
+}
+
+select {
+  height: 35px;
+}
+
+.submitPrj {
+  margin: 15px auto;
+}
+
+.radioBtnContainer {
+  display: inline-flex;
+  height: 50px;
+  width: 300px;
+}
+
+.dropdown {
+  margin-top: 12px;
+}
