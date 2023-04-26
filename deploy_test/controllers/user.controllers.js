@@ -8,7 +8,6 @@ const authUser = async (req, res) => {
 	const req_token = req.cookies.accessToken;
 	const data = jwt.verify(req_token, process.env.JWT_SECRET);
 	try {
-		// const user = await _readDb("users", "*", "id", "=", data.id, "id", "ASC");
 		const user = await _readDb({ email: data.email });
 		if (!user) {
 			return res.status(400).json({ error: "user not found" });
@@ -81,6 +80,7 @@ const login = async (req, res) => {
 // function for logout of current user
 
 const logout = (req, res) => {
+	if (req.body.userId !== "") console.log("reached logout");
 	res.clearCookie("accessToken");
 	return res.json({ msg: "logging you out" });
 };
