@@ -2,7 +2,7 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const dotenv = require("dotenv");
-// const path = require("path");
+const path = require("path");
 
 const app = express();
 
@@ -21,10 +21,10 @@ app.use(
 	})
 );
 
-// app.use("/", express.static(path.resolve(__dirname, "./client/build")));
-// app.get("*", (req, res) => {
-// 	res.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
-// });
+app.use("/", express.static(path.resolve(__dirname, "./client/build")));
+app.get("*", (req, res) => {
+	res.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
+});
 
 app.use("/users", require("./routes/user.routes"));
 
