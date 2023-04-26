@@ -6,7 +6,7 @@ import { AuthProvider } from "./context/GlobalStates";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <AuthProvider>
-    <App />
-  </AuthProvider>
+	<AuthProvider>
+		<App />
+	</AuthProvider>
 );
